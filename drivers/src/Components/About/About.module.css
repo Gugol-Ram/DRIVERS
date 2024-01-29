@@ -1,0 +1,91 @@
+.container {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+
+  /* background-image: url("../../Img/About.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100%;
+  height: 700px; */
+}
+.header {
+  /* background-color: #ffcdb2; */
+  margin-bottom: 20px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  background-image: url("../../Img/About.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+/* p {
+  font-size: 1.1em;
+} */
+.parr {
+  font-size: 30px;
+  background-color: rgba(250, 235, 215, 0.649);
+  border-radius: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row; /* Establece la dirección horizontal */
+  justify-content: center; /* Opcional: centra los elementos horizontalmente */
+}
+
+ul li {
+  margin: 0 10px; /* Espacio entre los elementos */
+}
+
+.about {
+  background-color: rgb(118, 104, 87);
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 1.4em;
+}
+
+.contactButtons {
+  padding: 6px 10px;
+  text-align: center;
+  margin: 0.6rem auto;
+  font-size: 1.5rem;
+  color: #ffcdb2;
+  text-decoration: none;
+  background-color: #2b2d42;
+  border-radius: 35px;
+  transition: 0.3s;
+  font-family: system-ui;
+  display: inline-block; /* Aseguramos que los botones se ajusten automáticamente al contenido. */
+}
+
+.contactButtons:hover {
+  text-decoration: underline;
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}

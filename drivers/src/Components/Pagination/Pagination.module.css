@@ -1,0 +1,113 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Verdana";
+  font-size: 15px;
+  font-weight: 700;
+  /* margin: 10px 2px 2px 10px; */
+  width: 64px;
+  height: 39px;
+  border: solid;
+  border-width: 4px;
+  border-color: rgb(73, 43, 0);
+  margin-right: 7px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.939); */
+  text-align: center;
+  background: linear-gradient(
+    to bottom right,
+    rgb(196, 100, 3),
+    rgb(244, 231, 219)
+  );
+  border-radius: 30px;
+}
+.number:hover {
+  background: rgba(144, 108, 9, 0.877);
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  border: solid;
+  border-color: rgb(245, 196, 128);
+  border-width: 4px;
+  border-radius: 30px;
+}
+
+.link:hover {
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  border: solid;
+  border-color: rgb(245, 196, 128);
+  border-width: 4px;
+  border-radius: 30px;
+  background-color: rgba(144, 108, 9, 0.877);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(44, 36, 10);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+/* .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "verdana";
+  font-size: 20px;
+  font-weight: 500;
+  width: 30px;
+  height: 25px;
+  border: none;
+  margin-right: 7px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.939);
+  text-align: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(199, 170, 138, 0.781),
+    rgba(244, 231, 219, 0.767)
+  );
+  border-radius: 30px;
+} */
+.active {
+  background: #fd3700f1;
+  font-weight: bold;
+}
+
+.buttonWrapper {
+  color: Black;
+}
+
+.disabled {
+  color: gray;
+  /* background-color: rgba(112, 109, 98, 0.877); */
+  border-radius: 5px;
+  border-color: beige;
+  text-decoration: line-through;
+  text-decoration-color: gainsboro;
+  text-decoration-thickness: 2px;
+  box-decoration-break: slice;
+}
+
+.disabled:hover {
+  background-color: rgba(227, 223, 212, 0.877);
+  border-color: gray;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 30px;
+}

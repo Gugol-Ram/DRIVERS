@@ -1,0 +1,75 @@
+.backGround {
+  background-image: url("../../Img/backGroundLogoF1.jpg");
+  background-repeat: repeat; /* Esto hará que la imagen se repita tanto en X como en Y */
+  background-position: center;
+  z-index: -1;
+  width: 100%;
+  height: 1600px;
+  background-size: 300px;
+}
+
+.loading {
+  text-align: center;
+  color: rgb(194, 113, 7);
+  font-family: "Nova Mono";
+  font-size: 60px;
+  letter-spacing: 4.3px;
+  text-shadow: -2px 0 black, 0 7px black, 1px 0 black, 0 -1px black;
+}
+
+.image {
+  margin-top: 100px;
+  width: 900px;
+  height: 240px;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 0 90px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(85, 43, 1, 0.761),
+    rgba(230, 150, 3, 0.709)
+  );
+  padding: 15px;
+  width: 85%;
+  height: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 1px rgba(65, 37, 1, 0.651);
+  border-color: rgb(22, 15, 41);
+  border-style: solid;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nova Mono";
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  color: rgb(245, 216, 163);
+  width: 30%;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.filter select {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  background: rgba(249, 240, 223, 0.651);
+  margin: 0 0 0 10px;
+  font-family: "gothic Medium";
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+}
+
+.filter select:hover {
+  background-color: rgba(251, 182, 103, 0.851);
+}

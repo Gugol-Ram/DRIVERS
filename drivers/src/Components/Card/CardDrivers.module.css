@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100&display=swap");
+
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacio entre las tarjetas */
+  margin: 0 auto; /* Centrar el contenedor */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  width: 300px;
+  margin: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(233, 184, 121, 0.637);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+  border: solid 5px rgb(118, 70, 3);
+}
+
+.container:hover .card:not(:hover) {
+  filter: brightness(50%);
+  transition: filter 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.15) translateY(-5px);
+  box-shadow: 5px 5px 20px rgb(87, 50, 2);
+  z-index: 1;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center; /* Centrar la imagen verticalmente y horizontalmente */
+  transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.1);
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(100, 69, 3, 0.84),
+    rgba(245, 193, 51, 0.822)
+  );
+  color: #000000;
+  padding: 15px;
+  border-radius: 15px;
+  height: 50px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+
+.card:hover .name {
+  opacity: 0;
+}
+
+.card:hover .data {
+  bottom: 0;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: rgba(163, 90, 7, 0.596);
+  /* border: 1px solid rgba(238, 130, 238, 0.479); */
+  border: none;
+  box-shadow: 0 0 3px 2px rgba(250, 182, 103, 0.384);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 15px 0 10px 25px;
+  color: #000000;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  width: 250px;
+  height: 30px;
+  cursor: pointer;
+}
+.nav {
+  text-decoration: none;
+}
+
+.button:hover {
+  background: rgba(255, 185, 93, 0.562);
+  color: rgb(87, 50, 2);
+  box-shadow: 0 0 3px 2px rgba(211, 113, 1, 0.384);
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  padding: 10px;
+  line-height: 1.9;
+  font-family: "Palanquin";
+  font-size: 20px;
+  position: absolute;
+  bottom: -100%;
+  border-radius: 15px;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(100, 69, 3, 0.781),
+    rgba(245, 193, 51, 0.712)
+  );
+  color: #f7d7b8;
+  transition: bottom 0.5s ease;
+  z-index: 2;
+}
+
+.subTittles {
+  margin: 5px 0 0 5px;
+  border-radius: 15px;
+  border-color: #331c00;
+  border-style: solid;
+  background: rgb(244, 241, 238);
+  color: #000000;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.data h4 {
+  margin: 0; /* Elimina los márgenes */
+}
+
+.card:hover .data {
+  bottom: 0;
+}
+
+.nationality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: monospace;
+}
+
+.teamString {
+  padding-left: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: monospace;
+}

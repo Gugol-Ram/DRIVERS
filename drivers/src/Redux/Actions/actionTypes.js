@@ -1,0 +1,17 @@
+export const GET_DRIVERS = "GET_DRIVERS";
+export const GET_DRIVER_BY_NAME = "GET_DRIVER_BY_NAME";
+export const GET_DRIVER_BY_ID = "GET_DRIVER_BY_ID";
+export const GET_DRIVER_BY_ID_REQUEST = "GET_DRIVER_BY_ID_REQUEST";
+export const GET_DRIVER_BY_ID_ERROR = "GET_DRIVER_BY_ID_ERROR";
+export const GET_TEAMS = "GET_TEAMS";
+export const FILTER_BY_TEAMS = "FILTER_BY_TEAMS";
+export const FILTER_BY_SOURCE = "FILTER_BY_SOURCE";
+export const POST_DRIVER = "POST_DRIVER";
+export const ORDER_BY = "ORDER_BY";
+/* */
+export const CLEAR_DETAILS = "CLEAR_DETAILS";
+export const UPDATE_FILTERS = "UPDATE_FILTERS";
+export const TEAM_COMB = "TEAM_COMB";
+export const REFRESH_FORM = "REFRESH_FORM";
+
+export const DELETE_DRIVER = "DELETE_DRIVER";

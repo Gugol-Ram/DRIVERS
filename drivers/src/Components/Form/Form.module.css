@@ -1,0 +1,283 @@
+.formContent Form {
+  width: 17rem;
+  /* display: contents; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../Img/backGrondCreate.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.fields {
+  background-color: #e9ddc6c2;
+  border-radius: 20px;
+  border: 5px solid black;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.formContent input {
+  margin-top: 15px;
+  border-radius: 10px;
+  border: solid;
+  border-color: rgba(213, 163, 0, 0.894);
+  background: rgba(131, 101, 2, 0.59);
+  height: 30px;
+  width: 250px;
+  font-family: "verdana";
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 3px 1px rgba(131, 101, 2, 0.59);
+}
+
+input::placeholder {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 15px;
+  background-color: rgba(250, 235, 215, 0.942);
+  border-color: brown;
+  border: solid;
+}
+
+.formContent input::selection {
+  border-color: rgb(238, 24, 24);
+  border: solid;
+}
+
+.teams {
+  margin-bottom: 15px;
+  /* padding: 10px; */
+}
+
+.teamBoxDefault {
+  font-family: "Arial Black";
+  background-color: antiquewhite;
+}
+
+label {
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: solid;
+  background: rgba(131, 101, 2, 0.59);
+  height: 25px;
+  min-width: 120px;
+  width: 160px;
+
+  font-family: "arial black";
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 3px 1px rgba(131, 101, 2, 0.59);
+}
+
+.selectedTeams {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.selectedTeam {
+  /* background-color: #007bff; */
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.errMsg {
+  margin-top: 10px;
+  color: rgb(255, 0, 0);
+  font-size: 15px;
+  font-family: "verdana";
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
+/* option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(121, 68, 0);
+  font-family: "Arial Black";
+  background-color: rgb(248, 246, 245);
+  cursor: pointer;
+} */
+
+.teamOptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(121, 68, 0);
+  font-family: "Arial Black";
+  background-color: rgb(248, 246, 245);
+  cursor: pointer;
+  padding: 10px;
+}
+
+.selectImage {
+  margin-top: 15px;
+  border-radius: 10px;
+  border: solid;
+  border-color: rgba(213, 163, 0, 0.894);
+  background: rgba(131, 101, 2, 0.59);
+  height: 35px;
+  width: 150px;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 3px 1px rgba(131, 101, 2, 0.59);
+  /* cursor: pointer; */
+}
+
+.selectImage:hover {
+  background-color: rgb(112, 56, 0);
+  color: white;
+  cursor: pointer;
+  height: 45px;
+  width: 160px;
+}
+
+.or {
+  font-family: "arial black";
+  /* margin-bottom: -6px;
+  margin-top: -6px; */
+}
+
+.submit {
+  margin-bottom: 40px;
+}
+
+.submit:disabled {
+  color: whitesmoke;
+  background-color: rgb(159, 172, 172);
+  border-color: rgb(107, 102, 102);
+  height: 40px;
+  width: 140px;
+}
+
+.submit:hover {
+  background-color: rgb(112, 56, 0);
+  color: white;
+  cursor: pointer;
+  height: 45px;
+  width: 250px;
+}
+
+.teamBox {
+  margin-top: 10px;
+  /* background-color: aquamarine; */
+}
+
+.selectedTeams {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+/* cada equipo que voy seleccionando: ESTILO */
+.selectedTeam {
+  background: rgba(131, 101, 2, 0.59);
+  color: #050505; /* Color del texto */
+  font-family: "arial black";
+  border-radius: 10px;
+  border: solid;
+  border-color: rgba(213, 163, 0, 0.894);
+  /* padding: 4px 8px;  */
+  justify-content: center;
+  margin-left: 8px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+/* PARA CUADNO QUERIA PODER AGREGAR TEAMS POR ESCRITO */
+.selectedTeam button {
+  background-color: #ff0000; /* Color de fondo del botón "Remove" */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 4px 8px; /* Espaciado interno del botón */
+  margin-left: 4px; /* Espaciado entre el texto y el botón */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+}
+
+.selectedTeam button:hover {
+  background-color: #ff5555; /* Color de fondo del botón al pasar el ratón */
+}
+
+.backGround {
+  background-image: url("../../Img/backGrondCreate.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100%;
+  height: 110%;
+}
+
+/* Añadir reglas de estilo para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+  .formContent {
+    padding: 20px; /* Añadir espaciado alrededor del contenido */
+    background-size: contain; /* Cambiar el tamaño de la imagen de fondo para que se adapte al contenedor */
+    height: auto; /* Altura automática para el contenido vertical */
+  }
+
+  .formContent form {
+    width: 100%; /* Ancho completo del formulario */
+    max-width: 300px; /* Ancho máximo del formulario */
+  }
+
+  .formContent input {
+    width: 100%; /* Ancho completo para los campos de entrada */
+    max-width: 250px; /* Ancho máximo para evitar que se extienda demasiado */
+    font-size: 16px; /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
+
+  label {
+    width: 100%; /* Ancho completo para las etiquetas */
+    max-width: 200px; /* Ancho máximo para evitar que se extiendan demasiado */
+    font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
+
+  .selectImage {
+    width: 100%; /* Ancho completo para el botón de selección de imagen */
+    max-width: 200px; /* Ancho máximo para evitar que se extienda demasiado */
+    font-size: 16px; /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
+
+  .submit {
+    width: 100%; /* Ancho completo para el botón de envío */
+    max-width: 200px; /* Ancho máximo para evitar que se extienda demasiado */
+    font-size: 16px; /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
+
+  .errMsg {
+    font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
+
+  .selectedTeam {
+    font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
+}

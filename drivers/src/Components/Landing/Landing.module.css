@@ -1,0 +1,198 @@
+.landingContent {
+  padding: 2px;
+  background-color: rgba(180, 178, 173, 0.627);
+  text-align: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  text-decoration-line: underline;
+  /* text-decoration-style: double; */
+}
+
+.landingContainer {
+  background-image: url("../../Img/backGroundLanding.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100%;
+  height: 110%;
+}
+
+.landingBox {
+  border: 6px solid;
+  border-radius: 30px;
+  border-color: rgb(132, 82, 1);
+  width: max-content;
+  display: inline-block;
+  background-color: rgba(74, 51, 21, 0.37);
+  padding: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.parr {
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.landing-image {
+  position: fixed;
+  right: 0;
+  top: 0; /* Ajusta esto para controlar la posición vertical */
+  width: 50%; /* Ancho igual a la mitad de la pantalla */
+  height: 100vh; /* Alto igual a la altura de la pantalla */
+  /* background-image: url("../../Img/landing.jpg"); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+/* //botones */
+.landingLink button {
+  text-align: center;
+  align-items: center;
+}
+/* .landing-container {
+  display: table-column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../Images/fondo.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* textos(entrar register etc */
+.landingLink {
+  text-decoration: bisque;
+  display: block;
+  margin: 15px 0;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.btn {
+  width: auto;
+  border: 4px solid #9c6c2e;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: bolder;
+  color: rgb(51, 33, 1);
+  font-size: 20px;
+  font-family: "geneva";
+  background-color: rgba(246, 211, 143, 0.957);
+  font-size: 1.3em;
+}
+
+.btnText {
+  width: auto;
+  border: 2px solid #211608;
+  border-radius: 6px;
+  cursor: default;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "geneva";
+  background-color: rgb(255, 255, 255);
+  font-size: 1.3em;
+}
+
+.btn:hover {
+  font-size: 20px;
+  font-family: "geneva";
+  background-color: rgba(
+    88,
+    56,
+    2,
+    0.669
+  ); /* Cambia el color al pasar el ratón */
+  border: 4px;
+  border-style: solid;
+  border-color: #9c6c2e;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+.btn:disabled {
+  color: gray;
+  background-color: azure;
+  border-color: #9c6c2e95;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "geneva";
+}
+
+.btn:disabled:hover {
+  color: gray;
+  cursor: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "geneva";
+}
+
+.disabledP {
+  color: rgb(227, 0, 0);
+  font-size: 14px;
+  border: red;
+  border-style: solid;
+  border-radius: 8px;
+  background-color: aliceblue;
+  width: max-content;
+  /* display: inline; */
+  margin-left: 38%;
+}
+
+/* Añadir reglas de estilo para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+  .landingContainer {
+    background-size: contain; /* Cambiar el tamaño de la imagen de fondo para que se ajuste al contenedor */
+    height: auto; /* Altura automática para el contenido vertical */
+  }
+
+  .landingBox {
+    width: 100%; /* Ancho completo para el contenedor de la caja */
+    max-width: 300px; /* Ancho máximo para evitar que se extienda demasiado */
+    padding: 12px; /* Reducir el relleno para dispositivos móviles */
+    margin-top: 20px; /* Reducir el margen superior */
+  }
+
+  .parr {
+    font-size: 16px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    font-weight: 700; /* Reducir el peso de la fuente para dispositivos móviles */
+    font-style: normal; /* Eliminar el estilo itálico para dispositivos móviles */
+  }
+
+  .landingLink {
+    font-size: 18px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    margin: 10px 0; /* Reducir el margen superior e inferior */
+  }
+
+  .btn {
+    width: 100%; /* Ancho completo para los botones */
+    max-width: 250px; /* Ancho máximo para evitar que se extienda demasiado */
+    font-size: 18px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    border-radius: 12px; /* Reducir el radio de borde para dispositivos móviles */
+  }
+
+  .btnText {
+    width: 100%; /* Ancho completo para los botones de texto */
+    max-width: 250px; /* Ancho máximo para evitar que se extienda demasiado */
+    font-size: 18px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    border-radius: 8px; /* Reducir el radio de borde para dispositivos móviles */
+  }
+
+  .disabledP {
+    font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    border-radius: 6px; /* Reducir el radio de borde para dispositivos móviles */
+    margin-left: 10%; /* Ajustar el margen izquierdo */
+  }
+}

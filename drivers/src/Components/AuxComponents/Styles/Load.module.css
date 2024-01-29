@@ -1,0 +1,29 @@
+.loading {
+  background-size: contain;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat-x;
+  margin-left: 25px;
+}
+/* .loading {
+  background-repeat: repeat-x; 
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.loading img {
+  margin-left: 20px;
+  height: 150px;
+  width: 150px;
+  margin-top: 5%;
+  background-repeat: repeat-x;
+}

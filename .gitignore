@@ -1,0 +1,8 @@
+.env
+node_modules
+# Local Netlify folder
+.netlify
+/a.DESCARTE
+NOTAS.JS
+PASITOS.JS
+/a-FRAGMENTOS

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
+
+/* Ajustes generales para la pantalla completa */
+.generalContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap; /* Para que los elementos se envuelvan en pantallas pequeñas */
+  background-image: url("../../Img/backGrondDetail.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  font-family: "Arial Black";
+}
+
+/* Estilo del encabezado */
+.header {
+  margin-top: 10%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(100, 69, 3, 0.834),
+    rgba(245, 193, 51, 0.802)
+  );
+  width: 100%;
+  max-width: 600px; /* Establece un ancho máximo para contenido */
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px rgb(102, 61, 0);
+  padding: 20px;
+  text-align: center;
+  color: rgba(83, 50, 7, 0.897);
+  font-weight: 700;
+}
+
+/* Estilo para el botón de retroceso */
+.back {
+  background: rgba(211, 211, 211, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.btnBack {
+  display: inline-block;
+  padding: 10px;
+  color: rgb(243, 243, 243);
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 3px solid black;
+  font-family: "Arial Black";
+  background: linear-gradient(
+    to bottom right,
+    rgba(88, 62, 4, 0.555),
+    rgba(172, 116, 12, 0.575)
+  );
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.btnBack:hover {
+  background: rgba(255, 185, 93, 0.562);
+  color: rgb(87, 50, 2);
+  box-shadow: 0 0 3px 2px rgba(211, 113, 1, 0.384);
+}
+
+/* Estilo para la información */
+.info {
+  display: flex;
+  flex-wrap: wrap; /* Para que los elementos se envuelvan en pantallas pequeñas */
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/* Estilo para la imagen del corredor*/
+.image {
+  max-width: 100%; /* Ajusta el tamaño de la imagen según su contenedor */
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Estilo para los bloques de información */
+.block {
+  background: rgba(194, 134, 55, 0.397);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: rgba(83, 50, 7, 0.897);
+  font-weight: 700;
+}
+
+.id {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  background: rgba(232, 220, 202, 0.473);
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.tittles {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  background: rgba(173, 118, 35, 0.438);
+  padding: 6px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.subTittle {
+  border: 3px solid black;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-weight: 700;
+  font-family: "Verdana";
+  color: rgb(0, 0, 0);
+  background: rgba(232, 220, 202, 0.473);
+  padding: 6px;
+  border-radius: 10px;
+}
+
+h5 {
+  color: rgb(30, 7, 7);
+  font-family: "Arial Black";
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin: -15px;
+}
+
+/* Estilo para el botón de continuar */
+.btnContenedor {
+  display: flex;
+  justify-content: flex-end;
+}
+/*  */
+.name {
+  color: rgb(7, 5, 2);
+  text-decoration: double;
+  text-decoration-line: underline;
+}

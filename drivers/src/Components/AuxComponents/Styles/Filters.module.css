@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #6d6875;
+  font-family: sans-serif; /* Establecemos una fuente de sistema genérica para mayor consistencia en diferentes dispositivos. */
+}
+
+.box {
+  display: flex;
+  flex-direction: row; /* Cambiamos la dirección de los elementos a apilados en columnas para pantallas más pequeñas. */
+  align-items: center; /* Centramos los elementos horizontalmente en el contenedor. */
+  text-align: center; /* Centramos el texto en los elementos. */
+  border-radius: 8px;
+}
+
+.box select {
+  background-color: #ffcdb2;
+  color: black;
+  padding: 7px;
+  font-size: 16px;
+  appearance: button;
+  outline: none;
+  margin: 10px;
+  font-family: monospace;
+  border-radius: 10px;
+  max-width: 100%; /* Aseguramos que el elemento seleccione no se desborde en pantallas pequeñas. */
+}
+
+.box select option {
+  padding: 10px; /* Ajustamos el espaciado interior para una mejor apariencia en pantallas pequeñas. */
+  font-family: monospace;
+}
+
+.btn {
+  padding: 6px 10px;
+  text-align: center;
+  margin: 0.6rem auto;
+  font-size: 1rem;
+  color: #ffcdb2;
+  text-decoration: none;
+  background-color: #2b2d42;
+  border-radius: 35px;
+  transition: 0.3s;
+  font-family: system-ui;
+  display: inline-block; /* Aseguramos que los botones se ajusten automáticamente al contenido. */
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para pantallas más pequeñas, como tablets y dispositivos móviles */
+  .box select {
+    font-size: 14px; /* Reducimos el tamaño de fuente en pantallas pequeñas para mantener la legibilidad. */
+  }
+}
+
+.button-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre el botón y el selector */
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Posición debajo del botón */
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Para que aparezca por encima de otros elementos */
+}
+
+.button-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.send {
+  margin-left: 10px;
+  border-color: #603302;
+  /* border: solid; */
+  background-color: #f2e0cd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "verdana";
+}
+
+.send:hover {
+  background-color: #843d00;
+  width: 48px;
+  height: 35px;
+  font-family: "verdana";
+}
